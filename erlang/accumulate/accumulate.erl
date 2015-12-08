@@ -3,12 +3,12 @@
 
 accumulate(Fn, [H|T]) ->
 	io:format([H]),
-	Output = Fn([H]),
+	Output = Fn(H),
 	io:format(Output),
-	accumulate(Fn,T,Output).
+	accumulate(Fn,T,[Output]).
 
 accumulate(Fn, [H|T], Output) ->
-	NewOutput = Output ++ Fn([H]),
+	NewOutput = Output ++ [Fn(H)],
 	accumulate(Fn,T,NewOutput);
 
 accumulate(_, [], Output) ->
