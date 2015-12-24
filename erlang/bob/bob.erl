@@ -21,7 +21,7 @@ response_for("") ->
 	"Fine. Be that way!";
 
 response_for(Sentence) ->
-	case string:to_upper(Sentence) == Sentence of
+	case re:run(Sentence, "([A-Z]{2,}[ ]*)+)") of
 		true -> case re:run(Sentence, "[ ]{2,}") of
 				{match, _} -> "Fine. Be that way!";
 				nomatch    -> "Whoa, chill out!"
