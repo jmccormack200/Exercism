@@ -1,0 +1,2 @@
+/usr/bin/ar cr libfactors.a  CMakeFiles/factors.dir/factors/factors.cpp.o
+/usr/bin/ranlib libfactors.a

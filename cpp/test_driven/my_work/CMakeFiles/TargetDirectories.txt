@@ -1,0 +1,2 @@
+/home/john/exercism/cpp/test_driven/my_work/CMakeFiles/factors.dir
+/home/john/exercism/cpp/test_driven/my_work/CMakeFiles/test_factors.dir
